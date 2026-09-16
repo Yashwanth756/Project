@@ -1,0 +1,602 @@
+[
+  {
+    "question": "How soon is an application decided",
+    "expected_document_id": "FAQ-GEN-017",
+    "expected_fact_substring": "decided within seven working days of document submission",
+    "product_type": "all",
+    "question_id": "RQ001",
+    "answerable": true
+  },
+  {
+    "question": "How many applications can I hold at once",
+    "expected_document_id": "FAQ-GEN-017",
+    "expected_fact_substring": "at most two active retail loan applications",
+    "product_type": "all",
+    "question_id": "RQ002",
+    "answerable": true
+  },
+  {
+    "question": "How do I track my application",
+    "expected_document_id": "FAQ-GEN-017",
+    "expected_fact_substring": "customer portal using the application reference number",
+    "product_type": "all",
+    "question_id": "RQ003",
+    "answerable": true
+  },
+  {
+    "question": "When is the interest certificate issued",
+    "expected_document_id": "FAQ-SRV-018",
+    "expected_fact_substring": "issued after the close of each financial year",
+    "product_type": "all",
+    "question_id": "RQ004",
+    "answerable": true
+  },
+  {
+    "question": "Is a statement of account free",
+    "expected_document_id": "FAQ-SRV-018",
+    "expected_fact_substring": "downloaded from the customer portal at any time free of charge",
+    "product_type": "all",
+    "question_id": "RQ005",
+    "answerable": true
+  },
+  {
+    "question": "What does a physical statement cost",
+    "expected_document_id": "FAQ-SRV-018",
+    "expected_fact_substring": "charge of Rs 200",
+    "product_type": "all",
+    "question_id": "RQ006",
+    "answerable": true
+  },
+  {
+    "question": "When can I transfer my loan",
+    "expected_document_id": "POL-BTR-010",
+    "expected_fact_substring": "paid at least twelve instalments to the existing lender",
+    "product_type": "all",
+    "question_id": "RQ007",
+    "answerable": true
+  },
+  {
+    "question": "What is the minimum outstanding for a home loan transfer",
+    "expected_document_id": "POL-BTR-010",
+    "expected_fact_substring": "minimum outstanding of Rs 5,00,000",
+    "product_type": "all",
+    "question_id": "RQ008",
+    "answerable": true
+  },
+  {
+    "question": "What is the balance transfer fee",
+    "expected_document_id": "POL-BTR-010",
+    "expected_fact_substring": "processing fee of 0.50 percent of the transferred amount",
+    "product_type": "all",
+    "question_id": "RQ009",
+    "answerable": true
+  },
+  {
+    "question": "Who can be a co-applicant",
+    "expected_document_id": "POL-COA-009",
+    "expected_fact_substring": "spouse, parent, sibling or adult child",
+    "product_type": "all",
+    "question_id": "RQ010",
+    "answerable": true
+  },
+  {
+    "question": "How many co-applicants are allowed",
+    "expected_document_id": "POL-COA-009",
+    "expected_fact_substring": "maximum of three co-applicants",
+    "product_type": "all",
+    "question_id": "RQ011",
+    "answerable": true
+  },
+  {
+    "question": "Does a co-applicant's income count",
+    "expected_document_id": "POL-COA-009",
+    "expected_fact_substring": "income of a co-applicant is aggregated with the primary applicant's income",
+    "product_type": "all",
+    "question_id": "RQ012",
+    "answerable": true
+  },
+  {
+    "question": "What is the minimum age to apply",
+    "expected_document_id": "POL-ELG-002",
+    "expected_fact_substring": "minimum age of an applicant at the time of application is 21 years",
+    "product_type": "all",
+    "question_id": "RQ013",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum applicant age",
+    "expected_document_id": "POL-ELG-002",
+    "expected_fact_substring": "maximum age of an applicant at the time of application is 60 years",
+    "product_type": "all",
+    "question_id": "RQ014",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum instalment to income ratio",
+    "expected_document_id": "POL-ELG-002",
+    "expected_fact_substring": "must not exceed 50 percent of the applicant's net monthly income",
+    "product_type": "all",
+    "question_id": "RQ015",
+    "answerable": true
+  },
+  {
+    "question": "How quickly is a complaint acknowledged",
+    "expected_document_id": "POL-GRV-006",
+    "expected_fact_substring": "acknowledgement within 48 hours",
+    "product_type": "all",
+    "question_id": "RQ016",
+    "answerable": true
+  },
+  {
+    "question": "When can I escalate to the Nodal Officer",
+    "expected_document_id": "POL-GRV-006",
+    "expected_fact_substring": "unresolved within ten working days",
+    "product_type": "all",
+    "question_id": "RQ017",
+    "answerable": true
+  },
+  {
+    "question": "When can I approach the Banking Ombudsman",
+    "expected_document_id": "POL-GRV-006",
+    "expected_fact_substring": "does not resolve the matter within thirty days",
+    "product_type": "all",
+    "question_id": "RQ018",
+    "answerable": true
+  },
+  {
+    "question": "Is credit life insurance mandatory",
+    "expected_document_id": "POL-INS-007",
+    "expected_fact_substring": "optional for all retail loan products and is never a condition of sanction",
+    "product_type": "all",
+    "question_id": "RQ019",
+    "answerable": true
+  },
+  {
+    "question": "Is property insurance required for home loans",
+    "expected_document_id": "POL-INS-007",
+    "expected_fact_substring": "mandatory for home loans for the full tenure",
+    "product_type": "all",
+    "question_id": "RQ020",
+    "answerable": true
+  },
+  {
+    "question": "Can the premium be added to the loan",
+    "expected_document_id": "POL-INS-007",
+    "expected_fact_substring": "funded as part of the loan amount at the borrower's written request",
+    "product_type": "all",
+    "question_id": "RQ021",
+    "answerable": true
+  },
+  {
+    "question": "What is the interest rate range for a home loan",
+    "expected_document_id": "POL-INT-001",
+    "expected_fact_substring": "between 8.50 percent and 9.75 percent",
+    "product_type": "all",
+    "question_id": "RQ022",
+    "answerable": true
+  },
+  {
+    "question": "What rate applies to vehicle loans",
+    "expected_document_id": "POL-INT-001",
+    "expected_fact_substring": "between 9.25 percent and 11.50 percent",
+    "product_type": "all",
+    "question_id": "RQ023",
+    "answerable": true
+  },
+  {
+    "question": "How are gold loans priced",
+    "expected_document_id": "POL-INT-001",
+    "expected_fact_substring": "between 10.75 percent and 13.00 percent",
+    "product_type": "all",
+    "question_id": "RQ024",
+    "answerable": true
+  },
+  {
+    "question": "How recent must a utility bill be for address proof",
+    "expected_document_id": "POL-KYC-003",
+    "expected_fact_substring": "dated within the last three months",
+    "product_type": "all",
+    "question_id": "RQ025",
+    "answerable": true
+  },
+  {
+    "question": "Is a passport valid as address proof",
+    "expected_document_id": "POL-KYC-003",
+    "expected_fact_substring": "accepted as both identity proof and address proof",
+    "product_type": "all",
+    "question_id": "RQ026",
+    "answerable": true
+  },
+  {
+    "question": "How long does KYC verification take",
+    "expected_document_id": "POL-KYC-003",
+    "expected_fact_substring": "completed within seven working days",
+    "product_type": "all",
+    "question_id": "RQ027",
+    "answerable": true
+  },
+  {
+    "question": "What is the late payment charge",
+    "expected_document_id": "POL-LPP-005",
+    "expected_fact_substring": "late payment charge of 2 percent per month",
+    "product_type": "all",
+    "question_id": "RQ028",
+    "answerable": true
+  },
+  {
+    "question": "What is the bounce charge",
+    "expected_document_id": "POL-LPP-005",
+    "expected_fact_substring": "bounce charge of Rs 590 inclusive of taxes",
+    "product_type": "all",
+    "question_id": "RQ029",
+    "answerable": true
+  },
+  {
+    "question": "Is there a grace period for EMI payment",
+    "expected_document_id": "POL-LPP-005",
+    "expected_fact_substring": "grace period of five calendar days",
+    "product_type": "all",
+    "question_id": "RQ030",
+    "answerable": true
+  },
+  {
+    "question": "How long can a moratorium last",
+    "expected_document_id": "POL-MOR-012",
+    "expected_fact_substring": "moratorium of up to six months",
+    "product_type": "all",
+    "question_id": "RQ031",
+    "answerable": true
+  },
+  {
+    "question": "Does interest accrue during a moratorium",
+    "expected_document_id": "POL-MOR-012",
+    "expected_fact_substring": "Interest continues to accrue during the moratorium period",
+    "product_type": "all",
+    "question_id": "RQ032",
+    "answerable": true
+  },
+  {
+    "question": "How many times can I take a moratorium",
+    "expected_document_id": "POL-MOR-012",
+    "expected_fact_substring": "availed only once during the life of a loan",
+    "product_type": "all",
+    "question_id": "RQ033",
+    "answerable": true
+  },
+  {
+    "question": "What overseas work record does an NRI need",
+    "expected_document_id": "POL-NRI-011",
+    "expected_fact_substring": "continuous overseas employment record of at least one year",
+    "product_type": "all",
+    "question_id": "RQ034",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum NRI home loan tenure",
+    "expected_document_id": "POL-NRI-011",
+    "expected_fact_substring": "maximum tenure for a Non-Resident Indian home loan is 180 months",
+    "product_type": "all",
+    "question_id": "RQ035",
+    "answerable": true
+  },
+  {
+    "question": "From which account must an NRI repay",
+    "expected_document_id": "POL-NRI-011",
+    "expected_fact_substring": "Non-Resident External or Non-Resident Ordinary account",
+    "product_type": "all",
+    "question_id": "RQ036",
+    "answerable": true
+  },
+  {
+    "question": "Is there a foreclosure charge on floating rate home loans",
+    "expected_document_id": "POL-PRE-004",
+    "expected_fact_substring": "no foreclosure charge",
+    "product_type": "all",
+    "question_id": "RQ037",
+    "answerable": true
+  },
+  {
+    "question": "What is the personal loan foreclosure charge",
+    "expected_document_id": "POL-PRE-004",
+    "expected_fact_substring": "foreclosure charge of 4 percent of the outstanding principal",
+    "product_type": "all",
+    "question_id": "RQ038",
+    "answerable": true
+  },
+  {
+    "question": "When do gold loans become free of foreclosure charges",
+    "expected_document_id": "POL-PRE-004",
+    "expected_fact_substring": "no foreclosure charge after six months from disbursal",
+    "product_type": "all",
+    "question_id": "RQ039",
+    "answerable": true
+  },
+  {
+    "question": "When can I apply for a top-up",
+    "expected_document_id": "POL-TOP-008",
+    "expected_fact_substring": "after twelve months of satisfactory repayment",
+    "product_type": "all",
+    "question_id": "RQ040",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum top-up amount",
+    "expected_document_id": "POL-TOP-008",
+    "expected_fact_substring": "capped at 30 percent of the original sanctioned amount",
+    "product_type": "all",
+    "question_id": "RQ041",
+    "answerable": true
+  },
+  {
+    "question": "How are top-up loans priced",
+    "expected_document_id": "POL-TOP-008",
+    "expected_fact_substring": "priced 0.50 percent above the prevailing rate",
+    "product_type": "all",
+    "question_id": "RQ042",
+    "answerable": true
+  },
+  {
+    "question": "What is the minimum gold loan amount",
+    "expected_document_id": "TNC-GLD-015",
+    "expected_fact_substring": "minimum gold loan amount is Rs 25,000",
+    "product_type": "gold",
+    "question_id": "RQ043",
+    "answerable": true
+  },
+  {
+    "question": "What purity of gold is accepted",
+    "expected_document_id": "TNC-GLD-015",
+    "expected_fact_substring": "18 carat purity and above",
+    "product_type": "gold",
+    "question_id": "RQ044",
+    "answerable": true
+  },
+  {
+    "question": "How are pledged ornaments stored",
+    "expected_document_id": "TNC-GLD-015",
+    "expected_fact_substring": "stored in a fire resistant strong room and are fully insured",
+    "product_type": "gold",
+    "question_id": "RQ045",
+    "answerable": true
+  },
+  {
+    "question": "What is the minimum home loan amount",
+    "expected_document_id": "TNC-HOM-013",
+    "expected_fact_substring": "minimum home loan amount is Rs 15,00,000",
+    "product_type": "home",
+    "question_id": "RQ046",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum home loan amount",
+    "expected_document_id": "TNC-HOM-013",
+    "expected_fact_substring": "maximum is Rs 1,50,00,000",
+    "product_type": "home",
+    "question_id": "RQ047",
+    "answerable": true
+  },
+  {
+    "question": "What tenures are available for home loans",
+    "expected_document_id": "TNC-HOM-013",
+    "expected_fact_substring": "120, 180, 240, 300 and 360 months",
+    "product_type": "home",
+    "question_id": "RQ048",
+    "answerable": true
+  },
+  {
+    "question": "What is the minimum personal loan amount",
+    "expected_document_id": "TNC-PER-014",
+    "expected_fact_substring": "minimum personal loan amount is Rs 50,000",
+    "product_type": "personal",
+    "question_id": "RQ049",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum personal loan amount",
+    "expected_document_id": "TNC-PER-014",
+    "expected_fact_substring": "maximum is Rs 15,00,000",
+    "product_type": "personal",
+    "question_id": "RQ050",
+    "answerable": true
+  },
+  {
+    "question": "What tenures apply to personal loans",
+    "expected_document_id": "TNC-PER-014",
+    "expected_fact_substring": "12, 24, 36, 48 and 60 months",
+    "product_type": "personal",
+    "question_id": "RQ051",
+    "answerable": true
+  },
+  {
+    "question": "What is the minimum vehicle loan amount",
+    "expected_document_id": "TNC-VEH-016",
+    "expected_fact_substring": "minimum vehicle loan amount is Rs 1,00,000",
+    "product_type": "vehicle",
+    "question_id": "RQ052",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum vehicle loan tenure",
+    "expected_document_id": "TNC-VEH-016",
+    "expected_fact_substring": "12, 24, 36, 48, 60 and 84 months",
+    "product_type": "vehicle",
+    "question_id": "RQ053",
+    "answerable": true
+  },
+  {
+    "question": "What is the vehicle loan processing fee",
+    "expected_document_id": "TNC-VEH-016",
+    "expected_fact_substring": "processing fee of 0.75 percent of the sanctioned amount",
+    "product_type": "vehicle",
+    "question_id": "RQ054",
+    "answerable": true
+  },
+  {
+    "question": "What minimum income is required",
+    "expected_document_id": "POL-ELG-002",
+    "expected_fact_substring": "minimum net monthly income of Rs 18,000",
+    "product_type": "all",
+    "question_id": "RQ055",
+    "answerable": true
+  },
+  {
+    "question": "Can a bounce charge be waived",
+    "expected_document_id": "POL-LPP-005",
+    "expected_fact_substring": "one time waiver of the bounce charge may be granted once in a financial year",
+    "product_type": "all",
+    "question_id": "RQ056",
+    "answerable": true
+  },
+  {
+    "question": "When is video KYC available",
+    "expected_document_id": "POL-KYC-003",
+    "expected_fact_substring": "between 8:00 AM and 8:00 PM on working days",
+    "product_type": "all",
+    "question_id": "RQ057",
+    "answerable": true
+  },
+  {
+    "question": "What is the maximum loan to value ratio",
+    "expected_document_id": "POL-ELG-002",
+    "expected_fact_substring": "loan to value ratio must not exceed 0.75",
+    "product_type": "all",
+    "question_id": "RQ058",
+    "answerable": true
+  },
+  {
+    "question": "Is collateral needed for a personal loan",
+    "expected_document_id": "TNC-PER-014",
+    "expected_fact_substring": "unsecured facility and no collateral is taken",
+    "product_type": "personal",
+    "question_id": "RQ059",
+    "answerable": true
+  },
+  {
+    "question": "When are floating rates reset",
+    "expected_document_id": "POL-INT-001",
+    "expected_fact_substring": "first day of April and the first day of October",
+    "product_type": "all",
+    "question_id": "RQ060",
+    "answerable": true
+  },
+  {
+    "question_id": "OQ001",
+    "question": "What is the current price of gold per gram in Mumbai today?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ002",
+    "question": "Which mutual fund should I invest my savings in?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ003",
+    "question": "What is LoanServe's policy on cryptocurrency backed lending?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ004",
+    "question": "How do I open a demat account with LoanServe?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ005",
+    "question": "What is the GST rate on textile exports?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ006",
+    "question": "Can LoanServe issue me a credit card?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ007",
+    "question": "What are the visa requirements for working in Singapore?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ008",
+    "question": "Who is the current chairman of the Reserve Bank of India?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ009",
+    "question": "Does LoanServe offer education loans for overseas study?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ010",
+    "question": "What is the procedure to file an income tax return?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ011",
+    "question": "Can I get a business overdraft facility from LoanServe?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ012",
+    "question": "What is the weather forecast for Chennai this weekend?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ013",
+    "question": "Does LoanServe provide locker facilities at its branches?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ014",
+    "question": "What is the stamp duty rate for property registration in Karnataka?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  },
+  {
+    "question_id": "OQ015",
+    "question": "How do I transfer my provident fund account to a new employer?",
+    "expected_document_id": null,
+    "expected_fact_substring": null,
+    "product_type": "all",
+    "answerable": false
+  }
+]

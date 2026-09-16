@@ -1,0 +1,8 @@
+# The language model this project talks to.
+#
+# Nothing here belongs in the code, and nothing here belongs in version control.
+# Obtain a free-tier key from the Google AI Studio console and set both values below
+# before running any module that reaches the model.
+
+GEMINI_API_KEY=
+GEMINI_MODEL=

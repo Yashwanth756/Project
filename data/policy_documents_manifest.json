@@ -1,0 +1,146 @@
+[
+  {
+    "file_name": "POL-INT-001.pdf",
+    "document_id": "POL-INT-001",
+    "product_type": "all",
+    "category": "interest_rates",
+    "effective_date": "2025-04-01",
+    "title": "Interest Rate Policy"
+  },
+  {
+    "file_name": "POL-ELG-002.pdf",
+    "document_id": "POL-ELG-002",
+    "product_type": "all",
+    "category": "eligibility",
+    "effective_date": "2025-04-01",
+    "title": "Eligibility Norms"
+  },
+  {
+    "file_name": "POL-KYC-003.pdf",
+    "document_id": "POL-KYC-003",
+    "product_type": "all",
+    "category": "kyc",
+    "effective_date": "2025-01-15",
+    "title": "Know Your Customer Requirements"
+  },
+  {
+    "file_name": "POL-PRE-004.pdf",
+    "document_id": "POL-PRE-004",
+    "product_type": "all",
+    "category": "prepayment",
+    "effective_date": "2025-04-01",
+    "title": "Prepayment and Foreclosure Policy"
+  },
+  {
+    "file_name": "POL-LPP-005.pdf",
+    "document_id": "POL-LPP-005",
+    "product_type": "all",
+    "category": "penalties",
+    "effective_date": "2025-04-01",
+    "title": "Late Payment and Default Charges"
+  },
+  {
+    "file_name": "POL-GRV-006.pdf",
+    "document_id": "POL-GRV-006",
+    "product_type": "all",
+    "category": "grievance",
+    "effective_date": "2025-02-01",
+    "title": "Grievance Redressal Policy"
+  },
+  {
+    "file_name": "POL-INS-007.pdf",
+    "document_id": "POL-INS-007",
+    "product_type": "all",
+    "category": "insurance",
+    "effective_date": "2025-03-01",
+    "title": "Insurance Linkage Policy"
+  },
+  {
+    "file_name": "POL-TOP-008.pdf",
+    "document_id": "POL-TOP-008",
+    "product_type": "all",
+    "category": "top_up",
+    "effective_date": "2025-04-01",
+    "title": "Top-Up Loan Rules"
+  },
+  {
+    "file_name": "POL-COA-009.pdf",
+    "document_id": "POL-COA-009",
+    "product_type": "all",
+    "category": "co_applicant",
+    "effective_date": "2025-02-15",
+    "title": "Co-Applicant and Guarantor Rules"
+  },
+  {
+    "file_name": "POL-BTR-010.pdf",
+    "document_id": "POL-BTR-010",
+    "product_type": "all",
+    "category": "balance_transfer",
+    "effective_date": "2025-04-01",
+    "title": "Balance Transfer Policy"
+  },
+  {
+    "file_name": "POL-NRI-011.pdf",
+    "document_id": "POL-NRI-011",
+    "product_type": "all",
+    "category": "nri_lending",
+    "effective_date": "2025-03-15",
+    "title": "Non-Resident Indian Lending Policy"
+  },
+  {
+    "file_name": "POL-MOR-012.pdf",
+    "document_id": "POL-MOR-012",
+    "product_type": "all",
+    "category": "moratorium",
+    "effective_date": "2025-01-01",
+    "title": "Moratorium and Restructuring Policy"
+  },
+  {
+    "file_name": "TNC-HOM-013.pdf",
+    "document_id": "TNC-HOM-013",
+    "product_type": "home",
+    "category": "terms_and_conditions",
+    "effective_date": "2025-04-01",
+    "title": "Home Loan Terms and Conditions"
+  },
+  {
+    "file_name": "TNC-PER-014.pdf",
+    "document_id": "TNC-PER-014",
+    "product_type": "personal",
+    "category": "terms_and_conditions",
+    "effective_date": "2025-04-01",
+    "title": "Personal Loan Terms and Conditions"
+  },
+  {
+    "file_name": "TNC-GLD-015.pdf",
+    "document_id": "TNC-GLD-015",
+    "product_type": "gold",
+    "category": "terms_and_conditions",
+    "effective_date": "2025-04-01",
+    "title": "Gold Loan Terms and Conditions"
+  },
+  {
+    "file_name": "TNC-VEH-016.pdf",
+    "document_id": "TNC-VEH-016",
+    "product_type": "vehicle",
+    "category": "terms_and_conditions",
+    "effective_date": "2025-04-01",
+    "title": "Vehicle Loan Terms and Conditions"
+  },
+  {
+    "file_name": "FAQ-GEN-017.pdf",
+    "document_id": "FAQ-GEN-017",
+    "product_type": "all",
+    "category": "faq",
+    "effective_date": "2025-04-01",
+    "title": "Frequently Asked Questions on Applications"
+  },
+  {
+    "file_name": "FAQ-SRV-018.pdf",
+    "document_id": "FAQ-SRV-018",
+    "product_type": "all",
+    "category": "faq",
+    "effective_date": "2025-04-01",
+    "title": "Frequently Asked Questions on Servicing"
+  }
+]

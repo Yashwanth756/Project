@@ -1,0 +1,121 @@
+{
+  "chosen_threshold": 0.6,
+  "cost_at_chosen_inr": 86000000,
+  "cost_at_half_inr": 91720000,
+  "swept": [
+    {
+      "threshold": 0.05,
+      "missed_defaults": 2,
+      "refused_good_applicants": 4988,
+      "total_cost_inr": 200320000
+    },
+    {
+      "threshold": 0.1,
+      "missed_defaults": 12,
+      "refused_good_applicants": 3905,
+      "total_cost_inr": 161000000
+    },
+    {
+      "threshold": 0.15,
+      "missed_defaults": 21,
+      "refused_good_applicants": 3249,
+      "total_cost_inr": 138360000
+    },
+    {
+      "threshold": 0.2,
+      "missed_defaults": 31,
+      "refused_good_applicants": 2745,
+      "total_cost_inr": 122200000
+    },
+    {
+      "threshold": 0.25,
+      "missed_defaults": 41,
+      "refused_good_applicants": 2392,
+      "total_cost_inr": 112080000
+    },
+    {
+      "threshold": 0.3,
+      "missed_defaults": 51,
+      "refused_good_applicants": 2102,
+      "total_cost_inr": 104480000
+    },
+    {
+      "threshold": 0.35,
+      "missed_defaults": 61,
+      "refused_good_applicants": 1870,
+      "total_cost_inr": 99200000
+    },
+    {
+      "threshold": 0.4,
+      "missed_defaults": 79,
+      "refused_good_applicants": 1633,
+      "total_cost_inr": 96920000
+    },
+    {
+      "threshold": 0.45,
+      "missed_defaults": 104,
+      "refused_good_applicants": 1387,
+      "total_cost_inr": 97080000
+    },
+    {
+      "threshold": 0.5,
+      "missed_defaults": 119,
+      "refused_good_applicants": 1103,
+      "total_cost_inr": 91720000
+    },
+    {
+      "threshold": 0.55,
+      "missed_defaults": 135,
+      "refused_good_applicants": 831,
+      "total_cost_inr": 87240000
+    },
+    {
+      "threshold": 0.6,
+      "missed_defaults": 157,
+      "refused_good_applicants": 580,
+      "total_cost_inr": 86000000
+    },
+    {
+      "threshold": 0.65,
+      "missed_defaults": 179,
+      "refused_good_applicants": 433,
+      "total_cost_inr": 88920000
+    },
+    {
+      "threshold": 0.7,
+      "missed_defaults": 202,
+      "refused_good_applicants": 315,
+      "total_cost_inr": 93400000
+    },
+    {
+      "threshold": 0.75,
+      "missed_defaults": 221,
+      "refused_good_applicants": 246,
+      "total_cost_inr": 98240000
+    },
+    {
+      "threshold": 0.8,
+      "missed_defaults": 237,
+      "refused_good_applicants": 181,
+      "total_cost_inr": 102040000
+    },
+    {
+      "threshold": 0.85,
+      "missed_defaults": 264,
+      "refused_good_applicants": 111,
+      "total_cost_inr": 110040000
+    },
+    {
+      "threshold": 0.9,
+      "missed_defaults": 321,
+      "refused_good_applicants": 37,
+      "total_cost_inr": 129880000
+    },
+    {
+      "threshold": 0.95,
+      "missed_defaults": 389,
+      "refused_good_applicants": 0,
+      "total_cost_inr": 155600000
+    }
+  ]
+}

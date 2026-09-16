@@ -1,0 +1,51 @@
+thread_id,urgency,sentiment,exposure_inr,escalate,reasons
+THR000001,low,worried,6030000,True,"worried customer; large exposure of Rs 6,030,000"
+THR000002,high,worried,871000,True,high urgency; worried customer
+THR000003,medium,worried,2095000,True,"worried customer; large exposure of Rs 2,095,000"
+THR000004,high,neutral,0,False,high urgency
+THR000005,low,neutral,177000,False,
+THR000006,high,neutral,562000,False,high urgency
+THR000007,high,neutral,462000,False,high urgency
+THR000008,high,worried,256000,True,high urgency; worried customer
+THR000009,low,neutral,449000,False,
+THR000010,low,neutral,654000,False,
+THR000011,medium,neutral,997000,False,
+THR000012,medium,neutral,334000,False,
+THR000013,low,neutral,1500000,False,"large exposure of Rs 1,500,000"
+THR000014,high,worried,302000,True,high urgency; worried customer
+THR000015,medium,neutral,656000,False,
+THR000016,medium,neutral,479000,False,
+THR000017,low,neutral,0,False,
+THR000018,high,worried,4006000,True,"high urgency; worried customer; large exposure of Rs 4,006,000"
+THR000019,medium,worried,2667000,True,"worried customer; large exposure of Rs 2,667,000"
+THR000020,high,worried,984000,True,high urgency; worried customer
+THR000021,low,neutral,0,False,
+THR000022,high,neutral,447000,False,high urgency
+THR000023,medium,worried,413000,False,worried customer
+THR000024,medium,neutral,1803000,False,"large exposure of Rs 1,803,000"
+THR000025,low,worried,27000,False,worried customer
+THR000026,medium,neutral,982000,False,
+THR000027,low,neutral,1500000,False,"large exposure of Rs 1,500,000"
+THR000028,medium,neutral,2433000,False,"large exposure of Rs 2,433,000"
+THR000029,low,neutral,193000,False,
+THR000030,medium,neutral,181000,False,
+THR000031,medium,neutral,0,False,
+THR000032,high,worried,664000,True,high urgency; worried customer
+THR000033,medium,neutral,946000,False,
+THR000034,high,worried,197000,True,high urgency; worried customer
+THR000035,medium,neutral,1975000,False,"large exposure of Rs 1,975,000"
+THR000036,high,worried,919000,True,high urgency; worried customer
+THR000037,low,neutral,342000,False,
+THR000038,low,neutral,0,False,
+THR000039,low,neutral,197000,False,
+THR000040,low,neutral,7417000,True,"large exposure of Rs 7,417,000"
+THR000041,low,worried,0,False,worried customer
+THR000042,high,neutral,2625000,True,"high urgency; large exposure of Rs 2,625,000"
+THR000043,low,neutral,920000,False,
+THR000044,high,neutral,72000,False,high urgency
+THR000045,low,worried,785000,False,worried customer
+THR000046,high,neutral,1500000,True,"high urgency; large exposure of Rs 1,500,000"
+THR000047,low,neutral,289000,False,
+THR000048,high,neutral,2127000,True,"high urgency; large exposure of Rs 2,127,000"
+THR000049,medium,neutral,1561000,False,"large exposure of Rs 1,561,000"
+THR000050,low,neutral,697000,False,
