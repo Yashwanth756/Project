@@ -26,7 +26,19 @@ def create_application(
     request_log_path=None,
 ):
     """Factory creating an isolated LoanServe FastAPI application instance."""
-    app = FastAPI(title="LoanServe", version="1.0")
+    app = FastAPI(
+    title="LoanServe",
+    version="1.0",
+    docs_url=None,
+)
+    from fastapi.openapi.docs import get_swagger_ui_html
+
+    @app.get("/docs", include_in_schema=False)
+    def custom_swagger_ui():
+        return get_swagger_ui_html(
+            openapi_url="openapi.json",
+            title="LoanServe - Swagger UI",
+        )
 
     # Domain error handler
     @app.exception_handler(LoanServeError)
