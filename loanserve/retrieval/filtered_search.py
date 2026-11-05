@@ -31,7 +31,7 @@ def policy_filter(product_type):
 def filtered_search(collection, question, embedder, how_many=3):
     """Executes metadata-filtered cosine search over policy collection."""
     prod = product_in_question(question)
-    where_filter = policy_filter(prod)
+    where_filter = None if prod == "all" else policy_filter(prod)
     query_vec = embedder.encode([question], normalize_embeddings=True).tolist()
 
     results = collection.query(

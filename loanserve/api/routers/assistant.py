@@ -11,7 +11,11 @@ router = APIRouter(prefix="/assistant", tags=["assistant"])
 def ask_assistant(submitted: schemas.AssistantRequest, request: Request):
     """Processes a question through the multi-agent graph."""
     thread_id = submitted.thread_id or f"thread-{uuid.uuid4().hex[:8]}"
-    state, waiting = run_assistant(submitted.question, thread_id)
+    state, waiting = run_assistant(
+        submitted.question,
+        thread_id,
+        application_repository=request.app.state.application_repository,
+    )
 
     narration = [str(m.content) for m in state.get("messages", []) if hasattr(m, "content")]
 

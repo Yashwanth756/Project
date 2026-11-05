@@ -1,4 +1,5 @@
 from pathlib import Path
+from contextvars import ContextVar
 import pandas as pd
 
 from config.constants import (
@@ -8,6 +9,7 @@ from config.constants import (
     POLICY_STORE_PATH,
 )
 from loanserve.core.exceptions import LoanServeError
+from loanserve.core.entities import create_loan_application
 from loanserve.core.loan_calculations import calculate_monthly_installment
 from loanserve.data_access.database_loader import ApplicationDatabase
 from loanserve.retrieval.filtered_search import filtered_search
@@ -20,6 +22,18 @@ from loanserve.risk_models.baseline_model import (
 
 class ToolError(LoanServeError):
     """Raised when a tool is called with invalid, missing, or unresolvable arguments."""
+
+
+_application_repository = ContextVar("loanserve_application_repository", default=None)
+
+
+def set_application_repository(repository):
+    """Set the request-scoped application store used by assistant lookups."""
+    return _application_repository.set(repository)
+
+
+def reset_application_repository(token):
+    _application_repository.reset(token)
 
 
 def calculate_installment(arguments):
@@ -49,7 +63,7 @@ def calculate_installment(arguments):
 
 
 def lookup_application(arguments, database_path=APPLICATION_DATABASE_PATH):
-    """Looks up application record from database by application_id."""
+    """Looks up an application from the factory repository or CLI SQLite database."""
     if not isinstance(arguments, dict) or "application_id" not in arguments:
         raise ToolError("Missing application_id argument.")
 
@@ -57,8 +71,12 @@ def lookup_application(arguments, database_path=APPLICATION_DATABASE_PATH):
     if not app_id:
         raise ToolError("Application ID cannot be blank.")
 
-    database = ApplicationDatabase(database_path)
-    record = database.find_application(app_id)
+    repository = _application_repository.get()
+    if repository is not None:
+        record = repository.find_application(app_id)
+    else:
+        database = ApplicationDatabase(database_path)
+        record = database.find_application(app_id)
     if not record:
         raise ToolError(f"Application {app_id} not found in database.")
 
@@ -74,7 +92,22 @@ def predict_default_risk(arguments, model_path=CHAMPION_MODEL_PATH):
     if not isinstance(app_dict, dict):
         raise ToolError("Application must be a dictionary.")
 
-    # Check for presence of required modeling fields
+    app_dict = dict(app_dict)
+    if "employment_type" not in app_dict:
+        app_dict["employment_type"] = "salaried_private"
+    if "debt_to_income_ratio" not in app_dict:
+        try:
+            loan = create_loan_application(app_dict)
+            installment = loan.monthly_installment_inr()
+            app_dict["debt_to_income_ratio"] = installment / float(
+                app_dict["monthly_income_inr"]
+            )
+        except (KeyError, TypeError, ValueError, ZeroDivisionError) as err:
+            raise ToolError(f"Unable to derive debt-to-income ratio: {err}") from err
+    app_dict.setdefault("existing_loan_count", 0)
+    app_dict.setdefault("late_payments_last_12_months", 0)
+
+    # Check for presence of required modelling fields after deriving API-safe defaults.
     missing_cols = [c for c in MODELLING_COLUMNS if c not in app_dict]
     if missing_cols:
         raise ToolError(f"Application is missing required columns: {missing_cols}")

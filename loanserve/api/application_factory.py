@@ -6,6 +6,7 @@ from fastapi.responses import JSONResponse
 
 from config.constants import (
     ALLOWED_ORIGINS,
+    APPLICATION_DATABASE_PATH,
     MAXIMUM_REQUESTS_PER_MINUTE,
 )
 from loanserve.api.access_control import AccessControl
@@ -16,7 +17,7 @@ from loanserve.api.repository import (
     InMemoryApplicationRepository,
     SqlApplicationRepository,
 )
-from loanserve.api.routers import loan_applications, user_accounts
+from loanserve.api.routers import assistant, loan_applications, user_accounts
 from loanserve.core.exceptions import LoanServeError
 
 
@@ -24,8 +25,9 @@ def create_application(
     database_url=None,
     maximum_requests_per_minute=None,
     request_log_path=None,
+    use_in_memory=False,
 ):
-    """Factory creating an isolated LoanServe FastAPI application instance."""
+    """Create LoanServe using SQLite by default, with an in-memory test option."""
     app = FastAPI(title="LoanServe", version="1.0")
 
     # Domain error handler
@@ -47,11 +49,12 @@ def create_application(
     password_vault = PasswordVault()
     user_accounts_store = {}
 
-    if database_url is not None:
+    if use_in_memory:
+        app_repo = InMemoryApplicationRepository()
+    else:
+        database_url = database_url or f"sqlite:///{APPLICATION_DATABASE_PATH}"
         session_factory = create_session_factory(database_url)
         app_repo = SqlApplicationRepository(session_factory)
-    else:
-        app_repo = InMemoryApplicationRepository()
 
     app.state.application_repository = app_repo
     app.state.access_control = access_control
@@ -98,19 +101,15 @@ def create_application(
             dependencies=[Depends(access_control.authorise)],
         )
 
-    # Optional assistant router
-    try:
-        from loanserve.api.routers import assistant
-        if access_control.open_mode:
-            app.include_router(assistant.router, prefix="/api/v1")
-        else:
-            app.include_router(
-                assistant.router,
-                prefix="/api/v1",
-                dependencies=[Depends(access_control.authorise)],
-            )
-    except (ImportError, AttributeError):
-        pass
+    # Assistant router
+    if access_control.open_mode:
+        app.include_router(assistant.router, prefix="/api/v1")
+    else:
+        app.include_router(
+            assistant.router,
+            prefix="/api/v1",
+            dependencies=[Depends(access_control.authorise)],
+        )
 
     return app
 

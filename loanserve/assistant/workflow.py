@@ -1,13 +1,25 @@
 from pathlib import Path
 import os
+import uuid
 from langgraph.checkpoint.sqlite import SqliteSaver
 
 from config.constants import CHECKPOINT_DATABASE_PATH, LOW_CONFIDENCE_REFUSAL
 from loanserve.assistant.graph import build_assistant_graph
+from loanserve.assistant.agents import reset_runtime_llm, set_runtime_llm
 from loanserve.assistant.state import new_assistant_state
+from loanserve.assistant.tools import (
+    reset_application_repository,
+    set_application_repository,
+)
 
 
-def run_assistant(question, thread_id="default-thread", checkpoint_path=None):
+def run_assistant(
+    question,
+    thread_id="default-thread",
+    checkpoint_path=None,
+    llm=None,
+    application_repository=None,
+):
     """Runs the assistant graph against a customer question with SQLite state checkpointing."""
     db_file = checkpoint_path or os.environ.get(
         "LOANSERVE_CHECKPOINTS", CHECKPOINT_DATABASE_PATH
@@ -19,8 +31,21 @@ def run_assistant(question, thread_id="default-thread", checkpoint_path=None):
 
     with SqliteSaver.from_conn_string(str(p)) as saver:
         graph = build_assistant_graph(checkpointer=saver)
+        snapshot = graph.get_state(config)
+        if snapshot.values and not snapshot.next:
+            config = {
+                "configurable": {
+                    "thread_id": f"{thread_id}-{uuid.uuid4().hex[:8]}",
+                }
+            }
         init_state = new_assistant_state(question)
-        final_state = graph.invoke(init_state, config)
+        token = set_runtime_llm(llm)
+        repository_token = set_application_repository(application_repository)
+        try:
+            final_state = graph.invoke(init_state, config)
+        finally:
+            reset_application_repository(repository_token)
+            reset_runtime_llm(token)
 
     waiting_for_approval = "__interrupt__" in final_state
 
